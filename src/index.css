@@ -7,6 +7,12 @@
   --green-dots: #267144;
   --black-text-primary: #373737;
   --black-text-secondary: #454545;
+
+  --breakpoint-xs: 576px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 992px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xlg: 1400px;
 }
 
 body {
