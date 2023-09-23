@@ -1,9 +1,9 @@
 :root {
-  --green-primary: #224F34;
-  --green-secondary: #267D49;
-  --green-accent: #10FF70;
-  --green-bg-primary: #C2EFD4;
-  --green-bg-secondary: #6BC785;
+  --green-primary: #224f34;
+  --green-secondary: #267d49;
+  --green-accent: #10ff70;
+  --green-bg-primary: #c2efd4;
+  --green-bg-secondary: #6bc785;
   --green-dots: #267144;
   --black-text-primary: #373737;
   --black-text-secondary: #454545;
@@ -18,6 +18,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hide {
+  display: none !important;
+}
+
 .container {
   width: 100%;
   padding: 0 20px;
@@ -26,30 +30,50 @@ body {
 }
 
 @media screen and (min-width: 576px) {
+  .hide-xs {
+    display: none !important;
+  }
+
   .container {
     max-width: 540px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .hide-sm {
+    display: none !important;
+  }
+
   .container {
     max-width: 720px;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .hide-md {
+    display: none !important;
+  }
+
   .container {
     max-width: 960px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .hide-lg {
+    display: none !important;
+  }
+
   .container {
     max-width: 1140px;
   }
 }
 
 @media screen and (min-width: 1400px) {
+  .hide-xl {
+    display: none !important;
+  }
+
   .container {
     max-width: 1320px;
   }
