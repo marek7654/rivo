@@ -1,3 +1,14 @@
+:root {
+  --green-primary: #224F34;
+  --green-secondary: #267D49;
+  --green-accent: #10FF70;
+  --green-bg-primary: #C2EFD4;
+  --green-bg-secondary: #6BC785;
+  --green-dots: #267144;
+  --black-text-primary: #373737;
+  --black-text-secondary: #454545;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +16,4 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
