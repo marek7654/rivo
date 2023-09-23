@@ -1,9 +1,12 @@
 import { NavLink } from 'react-router-dom';
 
 import classes from './MainNavigation.module.css';
+import Hamburger from './Hamburger';
 
 const MainNavigation = () => {
   return (
+    <>
+    <Hamburger />
     <nav className={classes.navigation}>
       <ul className={classes.list}>
         <li>
@@ -49,6 +52,7 @@ const MainNavigation = () => {
         </li>
       </ul>
     </nav>
+    </>
   );
 };
 
