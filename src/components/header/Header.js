@@ -9,11 +9,12 @@ import classes from './Header.module.css';
 const Header = () => {
   return (
     <header className={classes.header}>
-      <div className='container'>
+      <div className={`${classes.container} container`}>
+
         <MainNavigation />
 
-        <NavLink to=''>
-          <img src={logo} className={classes.logo} alt='Rivo logo' />
+        <NavLink to='' className={classes.logoLink}>
+          <img src={logo} className={classes.logoImg} alt='Rivo logo' />
         </NavLink>
 
         <NavLink to='cart' className={classes.cartLink}>
@@ -22,8 +23,8 @@ const Header = () => {
         </NavLink>
 
         <NavLink to='login' className={classes.loginLink}>
-          <img src={login} alt='Login' />
-          <span>LOGIN</span>
+          <img className={`${classes.loginImg} hide-md`} src={login} alt='Login' />
+          <span className='hide'>LOGIN</span>
         </NavLink>
 
       </div>

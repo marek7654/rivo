@@ -1,3 +1,29 @@
 .header {
+  position: relative;
+  padding: 10px 0;
   background-color: var(--green-bg-primary);
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logoLink {
+  position: absolute;
+  top: 15px;
+  left: calc(50% - 35px);
+}
+
+.logoImg {
+  width: 70px;
+}
+
+.cartLink {
+  margin-left: auto;
+}
+
+.loginImg {
+  width: 30px;
 }

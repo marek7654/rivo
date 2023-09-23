@@ -18,15 +18,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 .hide {
   display: none !important;
 }
 
 .container {
   width: 100%;
-  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 10px;
 }
 
 @media screen and (min-width: 576px) {
