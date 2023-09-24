@@ -1,5 +1,9 @@
+import Hero from "../components/hero/Hero";
+
 const HomePage = () => {
-  return <p>Let's see our amazing events!</p>;
+  return <>
+    <Hero/>
+  </>
 };
 
 export default HomePage;

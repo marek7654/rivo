@@ -6,7 +6,7 @@
   height: 51px;
   padding: 10px 0;
   background-color: var(--green-bg-primary);
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 1px solid var(--green-bg-secondary);
 }
 
 .container {
@@ -39,7 +39,7 @@
   --size: 9px;
   position: absolute;
   right: -2px;
-  bottom: 1px;
+  bottom: 4px;
   width: var(--size);
   height: var(--size);
   border-radius: 50%;

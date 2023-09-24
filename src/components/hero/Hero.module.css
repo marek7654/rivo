@@ -1,0 +1,24 @@
+.hero {
+  background-color: var(--green-bg-primary);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  color: var(--green-primary);
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-family: var(--font-accent);
+}
+
+.description {
+  margin-top: 0;
+  color: var(--green-secondary);
+  text-align: center;
+}

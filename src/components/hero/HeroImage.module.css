@@ -1,0 +1,30 @@
+.wrapper {
+  position: relative;
+  width: 350px;
+  aspect-ratio: 1 / 1;
+  max-width: 100%;
+  margin: 20px auto;
+  background-color: var(--green-bg-secondary);
+  background-size: 105%;
+  background-position: center;
+  background-repeat: no-repeat;
+  --radius-ratio: 0.8;
+  border-radius: 113px 36px 120px 66px;
+  box-shadow: inset 6px 6px 41px 0px rgba(0, 0, 0, 0.08);
+  /* border-radius: 141px 45px 150px 82px; */
+}
+
+.dots {
+  width: 20%;
+  position: absolute;
+}
+
+.dots1 {
+  top: 20%;
+  right: 6%;
+}
+
+.dots2 {
+  bottom: 13%;
+  left: 7%;
+}

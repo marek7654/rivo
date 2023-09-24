@@ -10,7 +10,6 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <div className={`${classes.container} container`}>
-
         <MainNavigation />
 
         <NavLink to='' className={classes.logoLink}>
@@ -23,10 +22,13 @@ const Header = () => {
         </NavLink>
 
         <NavLink to='login' className={classes.loginLink}>
-          <img className={`${classes.loginImg} hide-md`} src={login} alt='Login' />
+          <img
+            className={`${classes.loginImg} hide-md`}
+            src={login}
+            alt='Login'
+          />
           <span className='hide'>LOGIN</span>
         </NavLink>
-
       </div>
     </header>
   );
