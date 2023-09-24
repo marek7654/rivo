@@ -1,13 +1,16 @@
+import { Link } from 'react-router-dom';
 import classes from './Button.module.css';
 
 const Button = (props) => {
+  const { title, to, styleClass, onClickHandler } = props;
   return (
-    <a
-      className={`${classes.button} ${classes[props.styleClass]}`}
-      href={props.href}
+    <Link
+      className={`${classes.button} ${styleClass ? classes[styleClass] : ''}`}
+      to={to}
+      onClick={onClickHandler}
     >
-      {props.title}
-    </a>
+      {title}
+    </Link>
   );
 };
 
