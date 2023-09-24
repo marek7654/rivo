@@ -1,7 +1,12 @@
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 51px;
   padding: 10px 0;
   background-color: var(--green-bg-primary);
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .container {
