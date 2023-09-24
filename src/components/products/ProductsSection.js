@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { defer, json, useLoaderData, Await } from 'react-router-dom';
+import { defer, useLoaderData, Await } from 'react-router-dom';
 
 import { loadProducts } from '../../store/store';
 import ProductsList from './ProductsList';
@@ -20,7 +20,6 @@ const ProductsSection = () => {
             {(loadedProducts) => <ProductsList products={loadedProducts} />}
           </Await>
         </Suspense>
-        <ProductsList />
       </div>
     </section>
   );
