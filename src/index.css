@@ -8,14 +8,16 @@
   --black-text-primary: #373737;
   --black-text-secondary: #454545;
   --white: #f2f2f2;
+
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto Slab', serif;
+  --font-accent: 'Rufina', serif;
 }
 
 body {
   margin: 0;
   font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
