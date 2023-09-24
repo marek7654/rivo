@@ -18,8 +18,8 @@ const Header = () => {
         </NavLink>
 
         <NavLink to='cart' className={classes.cartLink}>
-          <img src={cart} alt='Cart' />
-          <div></div>
+          <img className={classes.cartImg} src={cart} alt='Cart' />
+          <div className={classes.cartStatus}></div>
         </NavLink>
 
         <NavLink to='login' className={classes.loginLink}>

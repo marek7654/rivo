@@ -1,5 +1,5 @@
 .hamburger {
-  --s: 20px;
+  --s: 18px;
   --c: var(--green-primary);
 
   height: var(--s);
