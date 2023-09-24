@@ -4,7 +4,7 @@ import HeroImage from './HeroImage';
 
 const Hero = () => {
   return (
-    <section className={classes.hero} style={{minHeight: `${window.innerHeight - 102}px`}}>
+    <section className={classes.hero}>
       <div className={`${classes.container} container`}>
         <HeroImage />
 
