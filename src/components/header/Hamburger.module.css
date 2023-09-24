@@ -27,6 +27,7 @@
   -moz-appearance: none;
   appearance: none;
 }
+
 .hamburger:before,
 .hamburger:after {
   content: '';
@@ -42,12 +43,15 @@
   --_p: calc(-1 * var(--s));
   --_s: 0s;
 }
+
 .hamburger:checked:before {
   transform: rotate(45deg);
 }
+
 .hamburger:checked:after {
   transform: rotate(-45deg);
 }
+
 .hamburger:focus-visible {
   clip-path: none;
   -webkit-mask: none;
