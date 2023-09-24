@@ -1,16 +1,29 @@
 .list {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   list-style: none;
 }
 
 .listItem {
-  width: 430px;
+  width: 370px;
   max-width: 100%;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .listItem {
+    width: 346px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .listItem {
+    width: 420px;
+  }
 }
 
 .listItem a {
