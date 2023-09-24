@@ -1,17 +1,30 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import { loadProducts } from '../../store/store';
 import starImg from '../../images/fi-ss-star.svg';
 import Button from '../../UI/Button';
 import classes from './ProductsList.module.css';
 
 const ProductsList = (props) => {
   const [products, setProducts] = useState(props.products || []);
+  const [showButton, setShowButton] = useState(true);
+  const [showLoading, setShowLoading] = useState(false);
+
+  const getProducts = async () => {
+    const data = await loadProducts(9);
+    setProducts(data);
+    setShowLoading(false);
+  };
 
   const seeAllclickHandler = (e) => {
     e.preventDefault();
-    console.log('see all');
+    setShowButton(false);
+    setShowLoading(true);
+    getProducts();
   };
+
+  const loading = <p>Loading...</p>;
 
   return (
     <>
@@ -35,8 +48,10 @@ const ProductsList = (props) => {
           </li>
         ))}
       </ul>
-
-      <Button title='See all ➞' onClickHandler={seeAllclickHandler} />
+      {showButton && (
+        <Button title='See all ➞' onClickHandler={seeAllclickHandler} />
+      )}
+      {showLoading && loading}
     </>
   );
 };

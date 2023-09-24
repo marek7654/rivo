@@ -15,7 +15,6 @@
 
 .listItem a {
   color: var(--black-text-primary);
-  text-decoration: none;
 }
 
 .image {

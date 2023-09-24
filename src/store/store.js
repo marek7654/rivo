@@ -1,7 +1,7 @@
 import { config } from "./config";
 
 export const loadProducts = async (limit = 3) => {
-  const response = await fetch(`${config.productsEndpoint}?limit=${limit}`);
+  const response = await fetch(`${config.productsEndpoint}/?limit=${limit}`);
   if (!response.ok) {
     throw JSON.stringify(
       { message: 'Could not fetch events.' },
