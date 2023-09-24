@@ -55,3 +55,8 @@
   outline: 2px solid var(--c);
   outline-offset: 5px;
 }
+
+.hamburger:checked + nav {
+  left: 0;
+  opacity: 1;
+}

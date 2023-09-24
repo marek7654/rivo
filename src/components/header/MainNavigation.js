@@ -6,7 +6,8 @@ import Hamburger from './Hamburger';
 const MainNavigation = () => {
   return (
     <>
-    <Hamburger />
+    <Hamburger/>
+    
     <nav className={classes.navigation}>
       <ul className={classes.list}>
         <li>

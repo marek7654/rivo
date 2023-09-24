@@ -1,11 +1,13 @@
 .navigation {
-  display: none;
   position: fixed;
-  top: 100px;
-  left: 0;
-  right: 0;
+  width:100vw;
+  top: 50px;
+  left: -105%;
   bottom: 0;
   background-color: var(--green-bg-primary);
+  opacity: 0;
+  transition: all .5s;
+  transition-timing-function: ease;
 }
 
 .list {
@@ -14,7 +16,20 @@
   flex-direction: column;
   justify-content: center;
   justify-items: center;
+  padding-bottom: 70px;
   padding-left: 0;
   text-align: center;
   list-style: none;
+}
+
+.list li {
+  border-bottom: 2px solid var(--green-primary);
+  padding-bottom: 15px;
+  margin: 10px 40px;
+}
+
+.list a {
+  text-decoration: none;
+  color: var(--green-primary);
+  font-size: 2rem;
 }
