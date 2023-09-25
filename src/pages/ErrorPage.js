@@ -20,8 +20,8 @@ const ErrorPage = () => {
   return (
     <>
       <Header />
-      <main style={{ minHeight: `${window.innerHeight - 102}px` }}>
-        <h1>{error.status}</h1>
+      <main style={{ padding: '50px', textAlign: 'center' }}>
+        <h1 style={{ padding: '70px 20px 50px' }}>{error.status}</h1>
         <p>{title}</p>
         <p>{message}</p>
       </main>
