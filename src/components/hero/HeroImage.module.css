@@ -11,7 +11,21 @@
   --radius-ratio: 0.8;
   border-radius: 113px 36px 120px 66px;
   box-shadow: inset 6px 6px 41px 0px rgba(0, 0, 0, 0.08);
-  /* border-radius: 141px 45px 150px 82px; */
+  @media screen and (min-width: 992px) {
+    max-width: 570px;
+    margin-left: 2rem;
+    flex: 1;
+    aspect-ratio: 1 / 1.26;
+    order: 2;
+    background-size: 132%;
+    border-radius: 141px 45px 150px 82px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 6rem;
+  }
+  @media screen and (min-width: 1400px) {
+    margin-left: initial;
+  }
 }
 
 .dots {
@@ -21,10 +35,10 @@
 
 .dots1 {
   top: 20%;
-  right: 6%;
+  right: 3%;
 }
 
 .dots2 {
   bottom: 13%;
-  left: 7%;
+  left: 5%;
 }

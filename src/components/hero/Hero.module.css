@@ -5,6 +5,13 @@
 .container {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+    padding: 50px 20px 80px;
+  }
+  @media screen and (min-width: 1400px) {
+    padding: 80px 20px 120px;
+  }
 }
 
 .contentWrapper {
@@ -12,6 +19,14 @@
   flex-direction: column;
   align-items: center;
   padding: 10px 0 40px;
+  @media screen and (min-width: 992px) {
+    align-items: flex-start;
+    order: 1;
+  }
+  @media screen and (min-width: 1400px) {
+    flex: 1;
+    font-size: 5.3rem;
+  }
 }
 
 .header {
@@ -25,6 +40,22 @@
   font-size: 2.3rem;
   line-height: 1.2;
   font-family: var(--font-accent);
+  @media screen and (min-width: 992px) {
+    margin-left: initial;
+    margin-right: initial;
+    margin-top: 2rem;
+    font-size: 4rem;
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+  }
+  @media screen and (min-width: 1400px) {
+    max-width: 649px;
+    font-size: 5.3rem;
+  }
 }
 
 .description {
@@ -32,4 +63,18 @@
   margin: 0 auto 30px;
   color: var(--green-secondary);
   text-align: center;
+  @media screen and (min-width: 992px) {
+    margin-left: initial;
+    margin-right: initial;
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 3rem;
+    padding-right: 4rem;
+    font-size: 1.2rem;
+    line-height: 2.2;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 1.4rem;
+  }
 }

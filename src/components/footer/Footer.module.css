@@ -8,5 +8,6 @@
   background-color: var(--green-primary);
   @media screen and (min-width: 992px) {
     height: 100px;
+    font-size: 1.2rem;
   }
 }
