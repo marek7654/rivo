@@ -5,16 +5,18 @@ import cart from '../../images/fi-rr-shopping-bag-add.svg';
 import login from '../../images/user-login.svg';
 import MainNavigation from './MainNavigation';
 import classes from './Header.module.css';
+import Button from '../../UI/Button';
 
 const Header = () => {
   return (
     <header className={classes.header}>
       <div className={`${classes.container} container`}>
-        <MainNavigation />
 
         <NavLink to='' className={classes.logoLink}>
           <img src={logo} className={classes.logoImg} alt='Rivo logo' />
         </NavLink>
+
+        <MainNavigation />
 
         <NavLink to='cart' className={classes.cartLink}>
           <img className={classes.cartImg} src={cart} alt='Cart' />
@@ -27,8 +29,9 @@ const Header = () => {
             src={login}
             alt='Login'
           />
-          <span className='hide'>LOGIN</span>
         </NavLink>
+
+        <Button to='login' title='LOGIN' styleClass='inHeader'/>
       </div>
     </header>
   );

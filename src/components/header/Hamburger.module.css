@@ -1,5 +1,5 @@
 .hamburger {
-  --s: 18px;
+  --s: 20px;
   --c: var(--green-primary);
 
   height: var(--s);
@@ -26,6 +26,9 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
 }
 
 .hamburger:before,
