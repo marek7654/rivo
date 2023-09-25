@@ -6,4 +6,7 @@
   align-items: center;
   color: var(--white);
   background-color: var(--green-primary);
+  @media screen and (min-width: 992px) {
+    height: 100px;
+  }
 }
