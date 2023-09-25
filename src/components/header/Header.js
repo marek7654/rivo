@@ -27,12 +27,12 @@ const Header = () => {
 
         <MainNavigation />
 
-        <NavLink to='cart' className={classes.cartLink}>
+        <NavLink to='tmp' className={classes.cartLink}>
           <img className={classes.cartImg} src={cart} alt='Cart' />
           <div className={classes.cartStatus}></div>
         </NavLink>
 
-        <NavLink to='login' className={classes.loginLink}>
+        <NavLink to='tmp' className={classes.loginLink}>
           <img
             className={`${classes.loginImg} hide-md`}
             src={login}
@@ -40,7 +40,7 @@ const Header = () => {
           />
         </NavLink>
 
-        <Button to='login' title='LOGIN' styleClass='inHeader' />
+        <Button to='tmp' title='LOGIN' styleClass='inHeader' />
       </div>
     </header>
   );

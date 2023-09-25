@@ -13,7 +13,7 @@ const Hero = () => {
             Explore our curated collection of stylish clothing and accessories
             tailored to your unique taste.
           </p>
-          <Button to="shop" title="EXPLORE NOW" styleClass="accent"/>
+          <Button to="tmp" title="EXPLORE NOW" styleClass="accent"/>
         </div>
       </div>
     </section>

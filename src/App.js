@@ -4,6 +4,7 @@ import RootLayout from './pages/layouts/Root';
 import ErrorPage from './pages/ErrorPage';
 import HomePage from './pages/Home';
 import { productsLoader } from './components/products/ProductsSection';
+import TmpPage from './pages/Tmp';
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage />, loader: productsLoader },
+      { path: 'tmp', element: <TmpPage /> },
     ]
   }
 ]);
