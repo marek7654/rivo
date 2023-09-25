@@ -19,6 +19,7 @@
   @media screen and (min-width: 1200px) {
     top: 45px;
     left: calc(50% - 278px);
+    transition: top .3s;
   }
 }
 

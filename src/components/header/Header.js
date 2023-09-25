@@ -6,12 +6,21 @@ import login from '../../images/user-login.svg';
 import MainNavigation from './MainNavigation';
 import classes from './Header.module.css';
 import Button from '../../UI/Button';
+import { useState } from 'react';
 
 const Header = () => {
-  return (
-    <header className={classes.header}>
-      <div className={`${classes.container} container`}>
+  const [fixedClass, setFixedClass] = useState(false);
+  document.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      setFixedClass(true);
+    } else {
+      setFixedClass(false);
+    }
+  });
 
+  return (
+    <header className={`${classes.header} ${fixedClass ? classes.fixed : ''}`}>
+      <div className={`${classes.container} container`}>
         <NavLink to='' className={classes.logoLink}>
           <img src={logo} className={classes.logoImg} alt='Rivo logo' />
         </NavLink>
@@ -31,7 +40,7 @@ const Header = () => {
           />
         </NavLink>
 
-        <Button to='login' title='LOGIN' styleClass='inHeader'/>
+        <Button to='login' title='LOGIN' styleClass='inHeader' />
       </div>
     </header>
   );
